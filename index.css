@@ -260,3 +260,7 @@ nav{
           transform: translateY(-20px);
      }
 }
+.footer{
+     background-color: var(--grey);
+     
+}
