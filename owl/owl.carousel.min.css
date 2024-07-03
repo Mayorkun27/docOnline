@@ -13,7 +13,7 @@
 .owl-carousel,
 .owl-carousel2{
     /* display:none; */
-    width:100%;
+    width:90%;
     z-index:1
 }
 .owl-carousel .owl-stage,
