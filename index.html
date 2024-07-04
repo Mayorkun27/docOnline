@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
           <meta charset="utf-8">
-          <title>Daily Prebuilt demo</title>
+          <title>docOnline</title>
           <meta name="viewport" content="width=device-width, initial-scale=1">
           <!-- <script src="https://unpkg.com/@daily-co/daily-js"></script> -->
           <link rel="icon" type="image/png" href="./assets/favicon.png">
@@ -10,6 +10,9 @@
           <!-- <script src="https://kit.fontawesome.com/2a49fbdbb8.js" crossorigin="anonymous"></script> -->
           <!-- Offline Font Awsome -->
           <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+
+          <!-- Offline Tabler Icons -->
+          <link rel="stylesheet" href="tabler-icons/webfont/tabler-icons.min.css">
 
           <!-- Online Bootstrap -->
           <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -24,7 +27,6 @@
 
           <!-- Owl carousel -->
           <link rel="stylesheet" href="owl/owl.carousel.min.css">
-
           <script src="owl/jquery.min.js"></script>
           <script src="owl/owl.carousel.js"></script>
 </head>
@@ -235,9 +237,152 @@
                </div>
           </section>
 
+          <!-- HOW IT WORKS -->
+          <section class="how py-5" id="howItWorks">
+               <div class="container py-5">
+                    <div class="row align-items-center">
+                         <div class="col-lg-5 col-md-5 col-12">
+                              <div class="card-img">
+                                   <img src="images/img2.jpg" alt="..." class="img-fluid">
+                              </div>
+                         </div>
+                         <div class="col-lg-7 col-md-7 col-12">
+                              <p>How it works</p>
+                              <h3 class="how-heading">4 easy steps to get your solution</h3>
+                              <div class="row align-items-center">
+                                   <div class="col-6 my-3">
+                                        <div class="card p-3 d-flex flex-row gap-3 align-items-center">
+                                             <div class="card-icon px-4 py-3">
+                                                  <img src="images/img3.svg" alt="..." class="img-fluid">
+                                             </div>
+                                             <div class="card-text d-flex flex-column">
+                                                  <h6 class="fw-bold">Become a Member</h6>
+                                                  <p>Sign Up, pick a plan, become a member, access your dashboard and you are good to go.</p>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-6 my-3">
+                                        <div class="card p-3 d-flex flex-row gap-3 align-items-center">
+                                             <div class="card-icon px-4 py-3">
+                                                  <img src="images/img3.svg" alt="..." class="img-fluid">
+                                             </div>
+                                             <div class="card-text d-flex flex-column">
+                                                  <h6 class="fw-bold">Book Consultation</h6>
+                                                  <p>Brief your health needs and we will find you a specialized doctor immediately.</p>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-6 my-3">
+                                        <div class="card p-3 d-flex flex-row gap-3 align-items-center">
+                                             <div class="card-icon px-4 py-3">
+                                                  <img src="images/img3.svg" alt="..." class="img-fluid">
+                                             </div>
+                                             <div class="card-text d-flex flex-column">
+                                                  <h6 class="fw-bold">Schedule Appointment</h6>
+                                                  <p>After we find you a doctor, select a convenient time slot and confirm your appointment.</p>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-6 my-3">
+                                        <div class="card p-3 d-flex flex-row gap-3 align-items-center">
+                                             <div class="card-icon px-4 py-3">
+                                                  <img src="images/img3.svg" alt="..." class="img-fluid">
+                                             </div>
+                                             <div class="card-text d-flex flex-column">
+                                                  <h6 class="fw-bold">Get Your Solution</h6>
+                                                  <p>Discuss your health concerns with the doctor and receive personalized advice & solution.</p>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <!-- PLANS -->
+          <section class="plans py-5" id="plans">
+               <div class="container py-5">
+                    <div class="row">
+                         <div class="col-12 text-center mb-5">
+                              <h3 class="plans-heading">Pricing Plan</h3>
+                         </div>
+                         <div class="col-4 my-3">
+                              <div class="card plan-card p-5 gap-4">
+                                   <div class="card-top d-flex gap-4 align-items-center">
+                                        <i class="fa fa-user"></i>
+                                        <h4 class="m-0 p-0">Basic</h4>
+                                   </div>
+                                   <div class="card-mid d-flex flex-column gap-3">
+                                        <div class="d-flex align-items-center">
+                                             <span class="fs-2 fw-bold">$99 /</span>
+                                             <small>monthly</small>
+                                        </div>
+                                        <h4>What's included</h4>
+                                        <ul class="p-0">
+                                             <li>Profile Creation</li>
+                                             <li>Appointment Booking</li>
+                                             <li>Notification Alerts</li>
+                                             <li>Limited Telemedicine Access</li>
+                                        </ul>
+                                        <button class="btn fw-bold py-3">Choose Plan</button>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-4 my-3">
+                              <div class="card plan-card plan-card2 p-5 gap-4">
+                                   <div class="card-top d-flex gap-4 align-items-center">
+                                        <i class="fa fa-user"></i>
+                                        <h4 class="m-0 p-0">Pro</h4>
+                                   </div>
+                                   <div class="card-mid d-flex flex-column gap-3">
+                                        <div class="d-flex align-items-center">
+                                             <span class="fs-2 fw-bold">$199 /</span>
+                                             <small>monthly</small>
+                                        </div>
+                                        <h4>What's included</h4>
+                                        <ul class="p-0">
+                                             <li>Profile Creation</li>
+                                             <li>Appointment Booking</li>
+                                             <li>Notification Alerts</li>
+                                             <li>Extended Telemedicine Access</li>
+                                             <li>Exclusive Discounts</li>
+                                             <li>Appointment History</li>
+                                             <li>Priority Customer Support</li>
+                                        </ul>
+                                        <button class="btn fw-bold py-3">Choose Plan</button>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-4 my-3">
+                              <div class="card plan-card p-5 gap-4">
+                                   <div class="card-top d-flex gap-4 align-items-center">
+                                        <i class="fa fa-user"></i>
+                                        <h4 class="m-0 p-0">Enterprise</h4>
+                                   </div>
+                                   <div class="card-mid d-flex flex-column gap-3">
+                                        <div class="d-flex align-items-center">
+                                             <span class="fs-2 fw-bold">$399 /</span>
+                                             <small>monthly</small>
+                                        </div>
+                                        <h4>What's included</h4>
+                                        <ul class="p-0">
+                                             <li>All Basic Plan Features</li>
+                                             <li>All Pro Plan Features</li>
+                                             <li>Personalized Health Insights</li>
+                                             <li>Family Account Management</li>
+                                        </ul>
+                                        <button class="btn fw-bold py-3">Choose Plan</button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
           <!-- Client testimonials -->
           <section class="testimonials py-5" id="testimonials">
-               <div class="container py-5">
+               <div class="container pt-5">
                     <div class="row">
                          <div class="col-12">
                               <div class="card bg-transparent border-0">
@@ -247,17 +392,135 @@
                          </div>
                          <div class="col-12">
                               <div class="row owl-carousel2 owl-theme mt-5">
-                                   <div class="col-12 item my-3">
-                                        <div class="card testimonial-card p-5">
-                                                  <img src="images/img1.webp" alt="..." style="border-radius: 50%;" class="img-fluid">
-                                             <div class="card-text d-grid">
+                                   <div class="col-11 item my-3">
+                                        <div class="card testimonial-card p-5 gap-3">
+                                             <img src="images/img1.webp" alt="..." style="border-radius: 50%;" class="img-fluid">
+                                             <div class="card-text d-flex flex-column gap-3">
                                                   <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit repellendus nulla, molestiae quibusdam ipsa aliquid optio dolorem, blanditiis nobis dolorum eligendi nam? Velit quod delectus nulla alias porro nam adipisci!</p>
-                                                  <h4 class="m-0">Andrew lewis</h4>
-                                                  <span>London</span>
+                                                  <div>
+                                                       <h5 class="m-0 p-0">Andrew lewis</h5>
+                                                       <span>London</span>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-11 item my-3">
+                                        <div class="card testimonial-card p-5 gap-3">
+                                             <img src="images/img1.webp" alt="..." style="border-radius: 50%;" class="img-fluid">
+                                             <div class="card-text d-flex flex-column gap-3">
+                                                  <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit repellendus nulla, molestiae quibusdam ipsa aliquid optio dolorem, blanditiis nobis dolorum eligendi nam? Velit quod delectus nulla alias porro nam adipisci!</p>
+                                                  <div>
+                                                       <h5 class="m-0 p-0">Andrew lewis</h5>
+                                                       <span>London</span>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-11 item my-3">
+                                        <div class="card testimonial-card p-5 gap-3">
+                                             <img src="images/img1.webp" alt="..." style="border-radius: 50%;" class="img-fluid">
+                                             <div class="card-text d-flex flex-column gap-3">
+                                                  <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit repellendus nulla, molestiae quibusdam ipsa aliquid optio dolorem, blanditiis nobis dolorum eligendi nam? Velit quod delectus nulla alias porro nam adipisci!</p>
+                                                  <div>
+                                                       <h5 class="m-0 p-0">Andrew lewis</h5>
+                                                       <span>London</span>
+                                                  </div>
                                              </div>
                                         </div>
                                    </div>
                               </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <section class="faq py-5" id="faq">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-6"></div>
+                         <div class="col-6">
+                              <div class="accordion" id="faq-details">
+
+                                   <div class="accordion-item">
+                                   <h2 class="accordion-header" id="headingOne">
+                                   <a href="javascript:void(0);" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                   How do I book an appointment with a doctor?
+                                   </a>
+                                   </h2>
+                                   <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faq-details" style="">
+                                   <div class="accordion-body">
+                                   <div class="accordion-content">
+                                   <p>Yes, simply visit our website and log in or create an account. Search for a doctor based on specialization, location, or availability &amp; confirm your booking.</p>
+                                   </div>
+                                   </div>
+                                   </div>
+                                   </div>
+                                   
+                                   
+                                   <div class="accordion-item">
+                                   <h2 class="accordion-header" id="headingTwo">
+                                   <a href="javascript:void(0);" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                   Can I request a specific doctor when booking my appointment?
+                                   </a>
+                                   </h2>
+                                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faq-details">
+                                   <div class="accordion-body">
+                                   <div class="accordion-content">
+                                   <p>Yes, you can usually request a specific doctor when booking your appointment, though availability may vary based on their schedule.</p>
+                                   </div>
+                                   </div>
+                                   </div>
+                                   </div>
+                                   
+                                   
+                                   <div class="accordion-item">
+                                   <h2 class="accordion-header" id="headingThree">
+                                   <a href="javascript:void(0);" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                   What should I do if I need to cancel or reschedule my appointment?
+                                   </a>
+                                   </h2>
+                                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faq-details">
+                                   <div class="accordion-body">
+                                   <div class="accordion-content">
+                                   <p>If you need to cancel or reschedule your appointment, contact the doctor as soon as possible to inform them and to reschedule for another available time slot.</p>
+                                   </div>
+                                   </div>
+                                   </div>
+                                   </div>
+                                   
+                                   
+                                   <div class="accordion-item">
+                                   <h2 class="accordion-header" id="headingFour">
+                                   <a href="javascript:void(0);" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                   What if I'm running late for my appointment?
+                                   </a>
+                                   </h2>
+                                   <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faq-details">
+                                   <div class="accordion-body">
+                                   <div class="accordion-content">
+                                   <p>If you know you will be late, it's courteous to call the doctor's office and inform them. Depending on their policy and schedule, they may be able to accommodate you or reschedule your appointment.</p>
+                                   </div>
+                                   </div>
+                                   </div>
+                                   </div>
+                                   
+                                   
+                                   <div class="accordion-item">
+                                   <h2 class="accordion-header" id="headingFive">
+                                   <a href="javascript:void(0);" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                   Can I book appointments for family members or dependents?
+                                   </a>
+                                   </h2>
+                                   <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faq-details">
+                                   <div class="accordion-body">
+                                   <div class="accordion-content">
+                                   <p>Yes, in many cases, you can book appointments for family members or dependents. However, you may need to provide their personal information and consent to do so.</p>
+                                   </div>
+                                   </div>
+                                   </div>
+                                   </div>
+                                   
+                                   </div>
                          </div>
                     </div>
                </div>
@@ -302,7 +565,7 @@
      <script>
           $('.owl-carousel').owlCarousel({
                loop: true,
-               margin: 10,
+               margin: 20,
                nav: true,
                //     responsive:{
                //         0:{
@@ -319,7 +582,7 @@
      </script>
      <script>
           $('.owl-carousel2').owlCarousel({
-               loop: false,
+               loop: true,
                margin: 10,
                nav: true,
                items: 1
