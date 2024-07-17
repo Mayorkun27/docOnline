@@ -224,12 +224,12 @@ nav{
      background-color: var(--grey-lightest);
      .owl-carousel{
           width: 100% !important;
+          position: relative;
           .owl-dots{
                display: none;
           }
-          position: relative;
           .item{
-               width: 93% !important;
+               width: 100% !important;
           }
           .owl-nav{
               display: flex;
@@ -268,6 +268,8 @@ nav{
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          border: none;
+          box-shadow: 1px 1px 5px var(--dark-blue-border);
           .icon{
                background: var(--grey-lightest);
                border-radius: 50%;
@@ -295,7 +297,7 @@ nav{
      }
      .specialities-card:hover{
           box-shadow: 2px 2px 5px #6b7785de;
-          transform: scale(1.1);
+          transform: scale(1.05);
           transition: all .8s;
           .icon{
                background: var(--dark-blue);
@@ -335,7 +337,7 @@ nav{
                justify-content: space-between;
                gap: 2rem;
                position: absolute;
-               top: 50%;
+               top: 35%;
                left: -3% !important;
                width: 120vw !important;
                button{
@@ -373,23 +375,32 @@ nav{
 }
 .owl-carousel2:after{
      position: absolute;
-     top: -70%;
-     left: -20%;
+     top: -60%;
+     left: -18%;
      content: "docOnline";
      width: 0;
      height: 0;
-     font-size: 16rem;
+     font-size: 15rem;
      z-index: -2;
      opacity: 30%;
      color: var(--dark-blue);
      text-shadow: 2px 2px 5px #6b7785;
      font-weight: 900;
 }
-.testimonials::before {
+.owl-carousel2::before{
      content: "";
      position: absolute;
-     left: 82%;
-     top: 41%;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(180deg, #00000001, #5252520c, #00000001);
+     top: 0;
+     z-index: -2;
+}
+.testimonials::before{
+     content: "";
+     position: absolute;
+     left: 84%;
+     top: 40%;
      opacity: 50%;
      width: 100%;
      z-index: -1;
@@ -397,7 +408,7 @@ nav{
      background: url(images/img9.png);
      background-repeat: no-repeat;
 }
-.testimonials::after {
+.testimonials::after{
      content: "";
      position: absolute;
      left: 0;
@@ -407,7 +418,6 @@ nav{
      width: 100%;
      height: 100%;
      background: url(images/img10.png);
-     /* background-position: right center; */
      background-repeat: no-repeat;
 }
 .how{
@@ -417,7 +427,19 @@ nav{
           font-weight: 600;
           color: var(--dark-blue);
           text-shadow: 2px 2px 5px #6b778575;
-          line-height: 90%; 
+          line-height: 80%; 
+     }
+     .pagarrs{
+          font-size: 14px;
+          width: max-content;
+          text-align: center;
+          opacity: 90%;
+          filter: blur(1px);
+          padding: 10px 30px;
+          border-radius: 100px;
+          box-shadow: 2px 2px 5px #6b7785;
+          background: #1f2d3d1b;
+          color: #1f2d3d;
      }
      .card{
           background: transparent;
@@ -513,6 +535,56 @@ nav{
           }
      }
 }
+.faq{
+     .testimonial{
+          font-size: 50px;
+          color: var(--dark-blue);
+          text-shadow: 2px 2px 5px #6b7785;
+     }
+     .pagarrs{
+          margin-top: 20px;
+          font-size: 14px;
+          width: max-content;
+          text-align: center;
+          margin: 0 auto !important;
+          backdrop-filter: blur(10px);
+          padding: 10px 30px;
+          border-radius: 100px;
+          box-shadow: 2px 2px 5px #6b7785;
+          background: #1f2d3d1b;
+          color: #1f2d3d;
+     }
+     .custom-accordion-header{
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #f7f7f7;
+          padding: 1rem;
+          border: 1px solid #dee2e6;
+          border-radius: 0.25rem;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          transition: background-color 0.3s;
+          text-decoration: none !important;
+     }
+     .custom-accordion-header:hover{
+          background-color: #e9ecef;
+     }
+     .icon{
+          transition: transform 0.3s;
+     }
+     .card{
+          margin-bottom: 1rem;
+          border: none;
+     }
+     .card-body{
+          border-top: 1px solid #dee2e6;
+     }
+     .card:not(:last-of-type) .card-header{
+          border-bottom: 1px solid #dee2e6;
+     }
+      
+}
 @keyframes moveup {
      0% {
           transform: translateY(0);
@@ -523,5 +595,7 @@ nav{
 }
 .footer{
      background-color: var(--grey);
-     
+     .ti{
+          font-size: 20px;
+     }
 }

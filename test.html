@@ -1,84 +1,95 @@
-]<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-
-    <link rel="stylesheet" href="owl/owl.carousel.min.css">
-
-    <script src="owl/jquery.min.js"></script>
-    <script src="owl/owl.carousel.js"></script>
+    <title>Styled Accordion</title>
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+    
 
     <style>
-        
+      
     </style>
 </head>
 <body>
-    
+    <div class="container mt-5">
+        <div class="accordion" id="customAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left custom-accordion-header" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1 <i class="icon fas fa-plus"></i>
+                        </button>
+                    </h2>
+                </div>
 
-    <div class="owl-carousel owl-theme">
-        <div class="item">
-          <h4>1</h4>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#customAccordion">
+                    <div class="card-body">
+                        Content for accordion item #1.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left custom-accordion-header" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2 <i class="icon fas fa-plus"></i>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#customAccordion">
+                    <div class="card-body">
+                        Content for accordion item #2.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left custom-accordion-header" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3 <i class="icon fas fa-plus"></i>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#customAccordion">
+                    <div class="card-body">
+                        Content for accordion item #3.
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="item">
-          <h4>2</h4>
-        </div>
-        <div class="item">
-          <h4>3</h4>
-        </div>
-        <div class="item">
-          <h4>4</h4>
-        </div>
-        <div class="item">
-          <h4>5</h4>
-        </div>
-        <div class="item">
-          <h4>6</h4>
-        </div>
-        <div class="item">
-          <h4>7</h4>
-        </div>
-        <div class="item">
-          <h4>8</h4>
-        </div>
-        <div class="item">
-          <h4>9</h4>
-        </div>
-        <div class="item">
-          <h4>10</h4>
-        </div>
-        <div class="item">
-          <h4>11</h4>
-        </div>
-        <div class="item">
-          <h4>12</h4>
-        </div>
-      </div>
+    </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    var accordionItems = document.querySelectorAll('.custom-accordion-header');
 
-      <!-- Just incase -->
-      <!-- <script src="owl/highlight.js"></script> -->
-      <!-- <script src="owl/app.js"></script> -->
+    accordionItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            var icon = this.querySelector('.icon');
+            if (icon.classList.contains('fa-plus')) {
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-minus');
+            } else {
+                icon.classList.remove('fa-minus');
+                icon.classList.add('fa-plus');
+            }
 
-      <script>
-        $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})
-      </script>
+            // Remove icons from other items
+            accordionItems.forEach(function(otherItem) {
+                if (otherItem !== item) {
+                    var otherIcon = otherItem.querySelector('.icon');
+                    otherIcon.classList.remove('fa-minus');
+                    otherIcon.classList.add('fa-plus');
+                }
+            });
+        });
+    });
+});
+
+    </script>
 </body>
 </html>
