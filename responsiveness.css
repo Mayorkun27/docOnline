@@ -1,0 +1,35 @@
+@media (min-width:200px) and (max-width:991px) {
+    .specialities{
+        .owl-carousel{
+             .owl-nav{
+                 justify-content: end !important;
+                 right: 0% !important;
+             }
+        }
+   }
+   .testimonials{
+        .testimonial{
+            font-size: 40px;
+            width: 100% !important;
+        }
+        .pagarrs{
+            width: 100%;
+        }
+        .owl-carousel2{
+            .testimonial-card{
+                flex-direction: column !important;
+                img{
+                    width: 50% !important;
+                    margin: 0 auto !important;
+                }
+            }
+        
+        }
+    }
+    .faq{
+        .testimonial{
+            font-size: 40px;
+            text-align: center !important;
+       }
+    }
+}

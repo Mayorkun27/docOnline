@@ -355,7 +355,7 @@ nav{
           .testimonial-card{
                background-color: var(--grey-lightest);
                background: transparent;
-               border: none;
+               border: none !important;
                border-radius: 0px;
                display: flex;
                flex-direction: row;
@@ -434,7 +434,7 @@ nav{
           width: max-content;
           text-align: center;
           opacity: 90%;
-          filter: blur(1px);
+          backdrop-filter: blur(1px);
           padding: 10px 30px;
           border-radius: 100px;
           box-shadow: 2px 2px 5px #6b7785;
@@ -582,6 +582,14 @@ nav{
      }
      .card:not(:last-of-type) .card-header{
           border-bottom: 1px solid #dee2e6;
+     }
+     .card-img{
+          border: 5px solid var(--dark-blue-border);
+          height: max-content;
+          img{
+               width: 100% !important;
+               object-fit: cover;
+          }
      }
       
 }
