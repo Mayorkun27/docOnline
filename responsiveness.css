@@ -2,24 +2,24 @@
     .services .pagarrs{
         font-size: 16px;
         width: 90%;
-   }
+    }
     .specialities{
-        .owl-carousel{
-            width: 180% !important;
-             .owl-nav{
-                 justify-content: start !important;
-                 right: -33% !important;
-             }
-        }
-        .item{
-            width: 500px !important; 
-            margin: 1rem !important;
-            .card{
-                padding: initial 2rem !important;
+            .owl-carousel{
+                width: 180% !important;
+                .owl-nav{
+                    justify-content: start !important;
+                    right: -33% !important;
+                }
             }
-        }
-   }
-   .testimonials{
+            .item{
+                width: 500px !important; 
+                margin: 1rem !important;
+                .card{
+                    padding: initial 2rem !important;
+                }
+            }
+    }
+    .testimonials{
         .testimonial{
             font-size: 40px;
             width: 100% !important;
