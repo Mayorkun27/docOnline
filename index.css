@@ -590,12 +590,16 @@ nav{
           transform: translateY(0);
      }
      100% {
-          transform: translateY(-20px);
+          transform: translateY(-10px);
      }
 }
 .footer{
      background-color: var(--grey);
      .ti{
           font-size: 20px;
+     }
+     .navbar-nav a{
+          color: var(--dark-blue-border);
+          text-decoration: none;
      }
 }
